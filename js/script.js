@@ -11,7 +11,7 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer({
     antialias: true
 });
-renderer.setClearColor(0xFFC0CB);
+renderer.setClearColor(0xFFB6C1);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -36,7 +36,7 @@ new THREE.OBJLoader().load('https://assets.codepen.io/127738/heart_2.obj', obj =
     group.add(heart);
 
     heart.material = new THREE.MeshBasicMaterial({
-        color: 0xFFC0CB
+        color: 0xFFB6C1
     });
     originHeart = Array.from(heart.geometry.attributes.position.array);
     sampler = new THREE.MeshSurfaceSampler(heart).build();
